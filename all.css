@@ -205,6 +205,49 @@ body {
 
 /* Footer Styles */
 
+.contact_us {
+    width: 980px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 50px 60px;
+    color: #fff;
+    background-image: url(./images/others/contact-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contact_us_title_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    letter-spacing: 1px;
+}
+
+.contact_us_title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact_btn {
+    background-color: #1cc3b2;
+    color: #fff;
+    border-radius: 3px;
+    padding: 15px 40px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .5s;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+.contact_btn:hover {
+    background-color: #fff;
+    color: #1cc3b2;
+}
+
 .footer {
     margin-top: 50px;
     background-color: #0e2737;
@@ -386,13 +429,36 @@ body {
     color: #1cc3b2;
 }
 
+@media (min-width: 2560px) {
+    body {
+        display: flex;
+        justify-content: center;
+    }
+}
+
 @media (max-width: 1025px) {
+    .contact_us {
+        width: 830px;
+    }
+
     .footer_top_section, .footer_bottom_section {
         width: 950px;
     }
 }
 
 @media (max-width: 769px) {
+    .contact_btn {
+        padding: 15px 30px;
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+
+    .contact_us {
+        padding: 40px 40px;
+        font-size: 14px;
+        width: 640px;
+    }
+    
     .footer_top_section {
         flex-wrap: wrap;
         justify-content: space-between;
@@ -419,6 +485,23 @@ body {
 }
 
 @media (max-width: 501px) {
+    .contact_us {
+        width: 310px;
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .contact_us_title {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .contact_btn {
+        padding: 15px 40px;
+        font-size: 14px;
+        margin-top: 40px;
+    }
+
     .footer_top_section, .footer_bottom_section {
         width: 350px;
     }
@@ -445,12 +528,20 @@ body {
 }
 
 @media (max-width: 376px) {
+    .contact_us {
+        width: 270px;
+    }
+
     .footer_top_section, .footer_bottom_section {
         width: 300px;
     }
 }
 
 @media (max-width: 321px) {
+    .contact_us {
+        width: 210px;
+    }
+
     .footer_top_section, .footer_bottom_section {
         width: 250px;
     }

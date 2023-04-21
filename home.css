@@ -595,58 +595,11 @@
     letter-spacing: 1px;
 }
 
-.contact_us {
-    width: 980px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    padding: 50px 60px;
-    color: #fff;
-    background-image: url(./images/others/contact-image.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.contact_us_title_box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    letter-spacing: 1px;
-}
-
-.contact_us_title {
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.contact_btn {
-    background-color: #1cc3b2;
-    color: #fff;
-    border-radius: 3px;
-    padding: 15px 40px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: .5s;
-    letter-spacing: 1px;
-    margin-top: 10px;
-}
-.contact_btn:hover {
-    background-color: #fff;
-    color: #1cc3b2;
-}
-
 /* Responsive */
 
 @media (max-width: 1025px) {
     .main_container {
         width: 100%;
-    }  
-
-    .contact_us {
-        width: 830px;
     }
 
     .about_us_box, .services, .testimonials_sliders,
@@ -832,18 +785,6 @@
 
     .event_box {
         width: 31%;
-    }
-
-    .contact_us {
-        padding: 40px 40px;
-        font-size: 14px;
-        width: 640px;
-    }
-    
-    .contact_btn {
-        padding: 15px 30px;
-        font-size: 12px;
-        letter-spacing: 0;
     }
 
     .slider {
@@ -1089,26 +1030,9 @@
         height: 170px;
     }
 
-    .contact_us {
-        width: 310px;
-        flex-direction: column;
-        margin-top: 0;
-    }
-    
-    .contact_us_title {
-        font-size: 40px;
-        margin-bottom: 30px;
-    }
-
     .contact_number {
         line-height: 25px;
         font-size: 16px;
-    }
-    
-    .contact_btn {
-        padding: 15px 40px;
-        font-size: 14px;
-        margin-top: 40px;
     }
 }
 
@@ -1164,10 +1088,6 @@
     .about_image_box_3 {
         width: 160px;
         height: 160px;
-    }
-
-    .contact_us {
-        width: 270px;
     }
 }
 
@@ -1236,10 +1156,6 @@
     .about_image_box_3 {
         width: 130px;
         height: 130px;
-    }
-
-    .contact_us {
-        width: 210px;
     }
 
     .testimonials {
