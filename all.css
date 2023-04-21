@@ -5,8 +5,6 @@ body {
     margin: 0;
     background-color: #fff;
     color: #101010;
-    display: flex;
-    justify-content: center;
 }
 
 /* Container Styles */
