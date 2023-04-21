@@ -6,11 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="all.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.css" integrity="sha512-IISyc/Jrl/fD0vfG2rWRsnaKcBjDrzU6CjH9dtt/IC9KjpC9jvJnGF62W0mMpBOAgwDvIP94SUKIuSimGZ6wrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
-        <div class="loading_box">
+        <div class="main_container">
+            <div class="loading_box">
             <div class="lds-ellipsis">
                 <div></div>
                 <div></div>
@@ -28,12 +30,13 @@
                 <li class="header_sec">Home</li>
                 <li class="header_sec">Rooms</li>
                 <li class="header_sec">About Us</li>
-                <li class="header_sec">Pages</li>
                 <li class="header_sec">News</li>
                 <li class="header_sec">Contact Us</li>
             </ul>
 
             <div class="booking">Book Now <i class="fa-sharp fa-solid fa-arrow-right"></i></div>
+
+            <div class="menu_btn"><i class="fa-solid fa-bars"></i></div>
         </div>
 
         <div class="container">
@@ -154,7 +157,7 @@
                     </div>
                 </div>
 
-                <swiper-container class="slider" space-between="0" centered-slides="true" autoplay-delay="4000" autoplay-disable-on-interaction="false" loop="true" navigation="true">
+                <swiper-container class="slider" space-between="0" centered-slides="true" autoplay-delay="4000" autoplay-disable-on-interaction="false" loop="true">
                     <swiper-slide class="slide">
                         <div class="slide_image_box s_i_b_1"></div>
 
@@ -167,25 +170,25 @@
 
                             <div class="slide_services_box">
                                 <div class="slide_service">
-                                    <div class="slide_service_icon"><i class="fa-solid fa-check"></i></div>
+                                    <div class="slide_service_icon"><i class="fa-solid fa-check check_icon"></i></div>
                                     <div class="slide_service_text">Size</div>
                                     <div>: 30 ft</div>
                                 </div>
 
                                 <div class="slide_service">
-                                    <div class="slide_service_icon"><i class="fa-solid fa-check"></i></div>
+                                    <div class="slide_service_icon"><i class="fa-solid fa-check check_icon"></i></div>
                                     <div class="slide_service_text">Capacity</div>
                                     <div>: 5 person</div>
                                 </div>
 
                                 <div class="slide_service">
-                                    <div class="slide_service_icon"><i class="fa-solid fa-check"></i></div>
+                                    <div class="slide_service_icon"><i class="fa-solid fa-check check_icon"></i></div>
                                     <div class="slide_service_text">Bed</div>
                                     <div>: King Beds</div>
                                 </div>
 
                                 <div class="slide_service">
-                                    <div class="slide_service_icon"><i class="fa-solid fa-check"></i></div>
+                                    <div class="slide_service_icon"><i class="fa-solid fa-check check_icon"></i></div>
                                     <div class="slide_service_text">Services</div>
                                     <div>: Wifi, Television, Bathroom</div>
                                 </div>
@@ -401,7 +404,7 @@
                     </div>
                 </div>
 
-                <div class="entertainments" slides-per-view="4" centered-slides="true" loop="true">
+                <div class="entertainments entertainment_box_1" slides-per-view="4" centered-slides="true" loop="true">
                     <div class="entertainment_box" onmouseenter="addShowClass(0)" onmouseleave="removeShowClass(0)">
                         <div class="entertainment_image_box e_i_b_1"></div>
 
@@ -419,7 +422,7 @@
                         </div>
                     </div>
 
-                    <div class="entertainment_box" onmouseenter="addShowClass(1)" onmouseleave="removeShowClass(1)">
+                    <div class="entertainment_box entertainment_box_2" onmouseenter="addShowClass(1)" onmouseleave="removeShowClass(1)">
                         <div class="entertainment_image_box e_i_b_2"></div>
 
                         <div class="entertainment_title_box">
@@ -436,7 +439,7 @@
                         </div>
                     </div>
 
-                    <div class="entertainment_box" onmouseenter="addShowClass(2)" onmouseleave="removeShowClass(2)">
+                    <div class="entertainment_box entertainment_box_3" onmouseenter="addShowClass(2)" onmouseleave="removeShowClass(2)">
                         <div class="entertainment_image_box e_i_b_3"></div>
 
                         <div class="entertainment_title_box">
@@ -453,7 +456,7 @@
                         </div>
                     </div>
 
-                    <div class="entertainment_box" onmouseenter="addShowClass(3)" onmouseleave="removeShowClass(3)">
+                    <div class="entertainment_box entertainment_box_4" onmouseenter="addShowClass(3)" onmouseleave="removeShowClass(3)">
                         <div class="entertainment_image_box e_i_b_4"></div>
 
                         <div class="entertainment_title_box">
@@ -545,7 +548,7 @@
                 </div>
 
                 <div class="footer_column f_c_2">
-                    <div class="footer_column_title">Our Blog</div>
+                    <div class="footer_column_title f_c_t_2">Our Blog</div>
 
                     <div class="blog_event">
                         <div class="event_title">What Is Lorem Ipsum ?</div>
@@ -614,5 +617,6 @@
                 loading_box.classList.remove("show")
             }, 5000);
         </script>
+        </div>
     </body>
 </html>

@@ -4,6 +4,12 @@ body {
     height: 100vh;
     color: #101010;
     font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.main_container {
+    max-width: 1519px;
 }
 
 .loading_box {
@@ -87,59 +93,6 @@ body {
     }
 }
 
-.header {
-    width: calc(100% - 400px);
-    padding: 0 200px;
-    background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 90px;
-    user-select: none;
-}
-
-.logo {
-    font-size: 35px;
-    font-weight: bold;
-    user-select: none;
-}
-
-.header_sections {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    width: 550px;
-    justify-content: space-between;
-}
-
-.header_sec {
-    transition: .2s;
-    cursor: pointer;
-    font-weight: bold;
-}
-.header_sec:hover {
-    color: #1cc3b2;
-}
-
-.booking {
-    height: 100%;
-    width: 200px;
-    background-color: #1cc3b2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    cursor: pointer;
-    transition: .3s;
-}
-.booking:hover {
-    background-color: #101010;
-}
-
-.fa-arrow-right {
-    margin: 2px 0 0 10px;
-}
-
 .top_side {
     position: relative;
     margin-bottom: 180px;
@@ -165,6 +118,7 @@ body {
     flex-direction: column;
     color: #fff;
     font-weight: bold;
+    width: 100%;
 }
 
 .app_issue {
@@ -779,183 +733,621 @@ body {
     color: #1cc3b2;
 }
 
-.footer {
-    margin-top: 50px;
-    background-color: #0e2737;
-    width: 100%;
-    padding: 80px 0 0 0;
+/* Responsive */
+
+@media (max-width: 1025px) {
+    .main_container {
+        width: 100%;
+    }  
+
+    .contact_us {
+        width: 830px;
+    }
+
+    .about_us_box, .services, .testimonials_sliders,
+    .events {
+        width: 950px;
+    }
+
+    .booking_box {
+        width: 870px;
+        padding: 35px 40px;
+    }
+
+    .input_title {
+        font-size: 14px;
+    }
+    
+    .book_input {
+        width: 160px;
+    }
+    
+    .select_input {
+        width: 65px;
+    }
+    
+    .book_btn {
+        width: 180px;
+    } 
+
+    .entertainment_title_box.show {
+        height: 360px;
+    }
+
+    .service_box {
+        box-shadow: 0 2px 14px 5px rgba(20, 20, 20, 0.04);
+        width: 160px;
+        padding: 30px 0;
+    }
+    
+    .service_icon {
+        font-size: 30px;
+    }
+    
+    .service_title {
+        font-size: 16px;
+    }
+
+    .about_image_box_1 {
+        width: 220px;
+    }
+    
+    .about_image_box_2 {
+        width: 200px;
+    }
+    
+    .about_image_box_3 {
+        width: 200px;
+    }
 }
 
-.footer_top_section {
-    width: 1100px;
-    height: fit-content;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
+@media (max-width: 769px) {
+    .about_us_box, .services, .testimonials_sliders,
+    .events {
+        width: 720px;
+    }
+
+    .booking_box {
+        width: 670px;
+        padding: 25px 25px;
+    }
+
+    .input_title {
+        font-size: 14px;
+    }
+    
+    .book_input {
+        width: 100px;
+        font-size: 11px;
+    }
+    
+    .select_input {
+        width: 60px;
+    }
+    
+    .book_btn {
+        width: 150px;
+        font-size: 12px;
+    } 
+
+    .entertainment_box_4 {
+        display: none;
+    }
+
+    .entertainment_box {
+        width: calc(100% / 3);
+        height: 100%;
+        position: relative;
+    }
+    
+    .about_title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    
+    .about_description {
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    
+    .manager_box {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    .manager_box div {
+        letter-spacing: .5px;
+    }
+
+    .about_image_box_1 {
+        width: 180px;
+        height: 300px;
+    }
+    
+    .about_image_box_2 {
+        width: 160px;
+        height: 145px;
+    }
+    
+    .about_image_box_3 {
+        width: 160px;
+        height: 145px;
+    }
+
+    .about_left_side {
+        width: calc(50% - 10px);
+        margin-right: 10px;
+    }
+
+    .service_box {
+        box-shadow: 0 2px 14px 5px rgba(20, 20, 20, 0.04);
+        width: 130px;
+        padding: 25px 0;
+    }
+    
+    .service_icon {
+        font-size: 25px;
+    }
+    
+    .service_title {
+        font-size: 14px;
+    }
+
+    .event_image_box {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 160px;
+        cursor: pointer;
+    }
+
+    .event_top_section {
+        font-size: 12px;
+    }
+    
+    .event_issue {
+        margin-left: 86px;
+        font-size: 12px;
+    }
+
+    .event_title {
+        font-size: 18px;
+        letter-spacing: 1px;
+        color: #101010;
+        transition: .2s;
+        cursor: pointer;
+    }
+
+    .event_description {
+        margin-top: 12px;
+        line-height: 20px;
+        font-size: 12px;
+    }
+
+    .event_box {
+        width: 31%;
+    }
+
+    .contact_us {
+        padding: 40px 40px;
+        font-size: 14px;
+        width: 640px;
+    }
+    
+    .contact_btn {
+        padding: 15px 30px;
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+
+    .slider {
+        height: 500px;
+        margin-top: 50px;
+    }
+
+    .slide_information_box {
+        width: calc(50% - 80px);
+        padding: 0 40px;
+    }
+    
+    .slide_inf_title {
+        font-size: 40px;
+    }
+
+    .slide_service {
+        font-size: 12px;
+    }
+    
+    .slide_service div {
+        margin-left: 10px;
+    }
+    
+    .slide_service_text {
+        width: 70px;
+    }
+
+    .guest_name {
+        letter-spacing: 0;
+        font-size: 14px;
+    }
 }
 
-.footer_column {
-    height: fit-content;
-    width: 220px;
-    color: #ccc;
-}
-.f_c_3 {
-    width: 120px;
-}
-.f_c_4 {
-    width: 320px;
+@media (max-width: 501px) {
+    .about_us_box {
+        flex-direction: column;
+        width: 390px;
+        align-items: center;
+        margin-top: 290px;
+        padding: 0;
+    }
+
+    .about_left_side {
+        width: calc(100% - 40px);
+        padding: 0 20px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .manager_box {
+        margin: 40px auto 0 auto;
+        font-size: 20px;
+    }
+
+    .app_issue {
+        margin-bottom: 20px;
+    }
+    
+    .welcome_title {
+        font-size: 40px;
+    }
+
+    .welcome_image_box {
+        height: 590px;
+    }
+
+    .booking_box {
+        width: 310px;
+        padding: 30px 40px;
+        flex-wrap: wrap;
+        bottom: -180px;
+    }
+    
+    .book_input {
+        padding: 15px 13px;
+        margin-bottom: 30px;
+        width: 120px;
+    }
+    
+    .select_input {
+        width: 92.5px;
+    }
+    
+    .book_btn {
+        width: 100%;
+        padding: 17px 0;
+        margin-top: 0;
+    }
+
+    .input_title {
+        font-size: 12px;
+    }
+
+    .services {
+        width: 390px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .service_box {
+        margin: 0 auto 20px auto;
+        width: 175px;
+        padding: 35px 0;
+    }
+    
+    .service_icon {
+        font-size: 30px;
+    }
+    
+    .service_title {
+        font-size: 16px;
+    }
+
+    .slider {
+        height: 670px;
+        margin-top: 50px;
+    }
+
+    .slide {
+        flex-direction: column;
+    }
+
+    .slide_image_box {
+        height: 40%;
+        width: 100%;
+    }
+
+    .slide_information_box {
+        width: calc(100% - 80px);
+        height: 60%;
+    }
+
+    .slide_inf_title {
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .price_box {
+        margin: 20px 0 30px 0;
+        font-size: 30px;
+    }
+
+    .price_box div {
+        font-size: 14px;
+    }
+
+    .view_details {
+        padding: 12px 30px;
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+    .testimonials_sliders {
+        display: flex;
+        flex-direction: column;
+        width: 390px;
+        height: 750px;
+        margin-bottom: 0;
+    }
+
+    .testimonials {
+        width: 100%;
+        height: 50%;
+    }
+    
+    .testimonials_slider_1 {
+        height: calc(50% - 60px);
+        width: 100%;
+        padding: 0 0 0 0;
+        margin: 10px 0 0 0;
+    }
+
+    .testimonial_information_box .slide_inf_title {
+        text-align: start;
+    }
+
+    .entertainments {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .entertainment_box_2 {
+        display: none;
+    }
+
+    .entertainment_box {
+        width: 100%;
+    }
+
+    .entertainment_title_box.show {
+        height: 300px;
+        background-color: #1cc3b2;
+    }
+
+    .events {
+        width: 390px;
+        margin: 0 auto 40px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .events_box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event_box {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .event_box:hover {
+        bottom: 0;
+    }
+
+    .event_image_box {
+        height: 300px;
+    }
+
+    .events_title {
+        font-size: 30px;
+    }
+
+    .event_issue {
+        margin-left: 90px;
+    }
+
+    .about_image_box_1 {
+        width: 200px;
+        height: 350px;
+    }
+    
+    .about_image_box_2 {
+        width: 180px;
+        height: 170px;
+    }
+    
+    .about_image_box_3 {
+        width: 180px;
+        height: 170px;
+    }
+
+    .contact_us {
+        width: 310px;
+        flex-direction: column;
+        margin-top: 0;
+    }
+    
+    .contact_us_title {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .contact_number {
+        line-height: 25px;
+        font-size: 16px;
+    }
+    
+    .contact_btn {
+        padding: 15px 40px;
+        font-size: 14px;
+        margin-top: 40px;
+    }
 }
 
-.footer_column .logo {
-    color: #fff;
-    font-size: 30px;
+@media (max-width: 376px) {
+    .about_us_box {
+        width: 350px;
+        margin-top: 290px;
+    }
+
+    .booking_box {
+        width: 270px;
+        bottom: -180px;
+    }
+
+    .book_input {
+        width: 100px;
+    }
+
+    .select_input {
+        width: 80px;
+    }
+
+    .services {
+        width: 350px;
+    }
+
+    .service_box {
+        width: 155px;
+    }
+
+    .testimonials_sliders {
+        width: 350px;
+    }
+
+    .events {
+        width: 350px;
+    }
+
+    .event_issue {
+        margin-left: 70px;
+    }
+
+    .about_image_box_1 {
+        width: 180px;
+        height: 330px;
+    }
+    
+    .about_image_box_2 {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .about_image_box_3 {
+        width: 160px;
+        height: 160px;
+    }
+
+    .contact_us {
+        width: 270px;
+    }
 }
 
-.footer_column .contact_number {
-    color: #1cc3b2;
-    margin: 15px 0;
-    letter-spacing: 1px;
-    font-size: 24px;
-    font-weight: bold;
-}
+@media (max-width: 321px) {
+    .about_us_box {
+        width: 290px;
+        margin-top: 290px;
+    }
 
-.our_gmail, .our_address {
-    margin-bottom: 15px;
-    color: #ccc;
-    letter-spacing: 1px;
-}
+    .booking_box {
+        width: 250px;
+        padding: 30px 20px;
+    }
 
-.our_address {
-    margin: 0;
-    font-size: 12px;
-    line-height: 20px;
-}
+    .book_input {
+        width: 90px;
+    }
 
-.footer_column_title {
-    color: #fff;
-    font-size: 25px;
-    font-weight: bold;
-}
+    .select_input {
+        width: 73px;
+    }
 
-.blog_event {
-    margin: 20px 0;
-}
+    .services {
+        width: 290px;
+    }
 
-.blog_event .event_title {
-    font-size: 18px;
-    color: #fff;
-    margin-bottom: 7px;
-    transition: .2s;
-}
-.blog_event .event_title:hover {
-    color: #1cc3b2;
-}
+    .service_box {
+        width: 125px;
+        height: 55px;
+    }
+    
+    .service_icon {
+        font-size: 25px;
+    }
+    
+    .service_title {
+        font-size: 14px;
+    }
 
-.date_box {
-    color: #ccc;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-}
-.date_box i {
-    font-size: 12px;
-    margin: 0 5px 0 0;
-}
+    .testimonials_sliders {
+        width: 290px;
+    }
 
-.link {
-    margin: 15px 0;
-    transition: .2s;
-    cursor: pointer;
-    color: #a1a1a1;
-    position: relative;
-    left: 0;
-    display: flex;
-    align-items: center;
-}
-.link:hover {
-    color: #1cc3b2;
-    left: 5px;
-}
+    .events {
+        width: 290px;
+    }
 
-.link i {
-    font-size: 12px;
-    margin-right: 8px;
-}
+    .event_image_box {
+        height: 290px;
+    }
 
-.whats_newsletter {
-    font-size: 16px;
-    margin: 20px 0;
-    line-height: 25px;
-}
+    .event_issue {
+        margin-left: 40px;
+    }
 
-.email_input {
-    width: 100%;
-    position: relative;
-}
+    .about_image_box_1 {
+        width: 150px;
+        height: 270px;
+    }
+    
+    .about_image_box_2 {
+        width: 130px;
+        height: 130px;
+    }
+    
+    .about_image_box_3 {
+        width: 130px;
+        height: 130px;
+    }
 
-.email_input input {
-    width: calc(100% - 70px);
-    background-color: #3e525f;
-    padding: 15px 50px 15px 20px;
-    border-radius: 30px;
-    color: #fff;
-    border: none;
-    letter-spacing: 1px;
-    outline: 0;
-}
-.email_input input::placeholder {
-    color: #ccc;
-}
+    .contact_us {
+        width: 210px;
+    }
 
-.submit_btn {
-    background-color: #1cc3b2;
-    color: #fff;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    position: absolute;
-    top: 4px;
-    right: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    cursor: pointer;
-    transition: .5s;
-}
-.submit_btn:hover {
-    background-color: #101010;
-}
-
-.footer_bottom_section {
-    margin: 0 auto;
-    color: #ccc;
-    border-top: 1px solid #3e525fb0;
-    width: 1100px;
-    padding: 20px 0;
-    margin-top: 80px;
-    letter-spacing: 1px;
-    font-size: 14px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.template_developer {
-    color: #fff;
-    text-decoration: none;
-    transition: .2s;
-}
-.template_developer:hover {
-    color: #1cc3b2;
-}
-
-.social_medias i {
-    margin-left: 15px;
-    cursor: pointer;
-    transition: .2s;
-    font-size: 17px;
-}
-.social_medias i:hover {
-    color: #1cc3b2;
+    .testimonials {
+        height: 300px;
+        margin-bottom: 20px;
+    }
+    
+    .app_issue {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    
+    .welcome_title {
+        font-size: 30px;
+    }
 }
