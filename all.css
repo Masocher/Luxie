@@ -160,47 +160,54 @@ body {
     color: #1cc3b2;
 }
 
-@media (max-width: 1025px) {
-    .header {
-        width: calc(100% - 80px);
-        padding: 0 40px;
-    }
+/* Pages Top Box */
 
-    .header_sections {
-        margin: 0 80px 0 50px;
-    }
+.top_side {
+    width: 100%;
+    height: 300px;
+    position: relative;
 }
 
-@media (max-width: 769px) {
-    .header_sections {
-        margin: 0 30px 0 20px;
-    }
-
-    .header_sec {
-        font-size: 14px;
-    }
+.top_side_image_box {
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/rooms/4.jpg);
+    background-position: center;
+    background-size: cover;
+    filter: brightness(.3);
 }
 
-@media (max-width: 501px) {
-    .header {
-        height: 70px;
-    }
+.top_side_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
 
-    .booking {
-        display: none;
-    }
-
-    .logo {
-        font-size: 30px;
-    }
-    
-    .header_sections {
-        display: none;
-    }
-
-    .menu_btn {
-        display: block;
-    }
+.page_address {
+    font-size: 16px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+.page_address a {
+    text-decoration: none;
+    color: #fff;
+    transition: .2s;
+}
+.page_address a:hover {
+    color: #1cc3b2;
+}
+.page_address i {
+    margin: 0 5px;
+    font-size: 14px;
 }
 
 /* Footer Styles */
@@ -429,6 +436,8 @@ body {
     color: #1cc3b2;
 }
 
+/* Responsive */
+
 @media (min-width: 2560px) {
     body {
         display: flex;
@@ -443,6 +452,15 @@ body {
 
     .footer_top_section, .footer_bottom_section {
         width: 950px;
+    }
+
+    .header {
+        width: calc(100% - 80px);
+        padding: 0 40px;
+    }
+
+    .header_sections {
+        margin: 0 80px 0 50px;
     }
 }
 
@@ -481,6 +499,14 @@ body {
         width: 650px;
         margin-top: 80px;
         font-size: 12px;
+    }
+
+    .header_sections {
+        margin: 0 30px 0 20px;
+    }
+
+    .header_sec {
+        font-size: 14px;
     }
 }
 
@@ -525,6 +551,38 @@ body {
     .f_c_3 ,.f_c_4 {
         margin-top: 0;
     }
+
+    .top_side {
+        height: 200px;
+    }
+
+    .top_side_title {
+        font-size: 30px;
+    }
+    
+    .page_address {
+        font-size: 14px;
+    }
+
+    .header {
+        height: 70px;
+    }
+
+    .booking {
+        display: none;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+    
+    .header_sections {
+        display: none;
+    }
+
+    .menu_btn {
+        display: block;
+    }
 }
 
 @media (max-width: 376px) {
@@ -544,5 +602,13 @@ body {
 
     .footer_top_section, .footer_bottom_section {
         width: 250px;
+    }
+
+    .top_side {
+        height: 200px;
+    }
+
+    .top_side_title {
+        font-size: 25px;
     }
 }
