@@ -162,7 +162,7 @@ body {
 
 /* Pages Top Box */
 
-.top_side {
+.pages_top_side {
     width: 100%;
     height: 300px;
     position: relative;
@@ -552,7 +552,7 @@ body {
         margin-top: 0;
     }
 
-    .top_side {
+    .pages_top_side {
         height: 200px;
     }
 
@@ -604,7 +604,7 @@ body {
         width: 250px;
     }
 
-    .top_side {
+    .pages_top_side {
         height: 200px;
     }
 
