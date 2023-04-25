@@ -74,9 +74,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-}
-
-.hotel_video_box .title_box {
     color: #fff;
     font-weight: bold;
     letter-spacing: 1px;
@@ -175,4 +172,127 @@
 }
 .link_box_link.show {
     background-color: rgba(0, 0, 0, .8);
+}
+
+@media (max-width: 1025px) {
+    .hotel_sections, .testimonials_section {
+        width: 950px;
+    }
+
+    .hotel_op_boxes {
+        height: 294.5px;
+    }
+}
+
+@media (max-width: 769px) {
+    .hotel_sections, .testimonials_section {
+        width: 720px;
+    }
+
+    .about_title {
+        font-size: 30px;
+    }
+
+    .about_description {
+        line-height: 24px;
+    }
+
+    .hotel_video_box .bottom_content {
+        width: 100%;
+    }
+
+    .hotel_op_boxes {
+        height: 223.2px;
+    }
+}
+
+@media (max-width: 426px) {
+    .hotel_sections, .testimonials_section {
+        width: 390px;
+    }
+
+    .testimonials_section {
+        flex-direction: column;
+        height: fit-content;
+        margin: 50px auto;
+    }
+
+    .left_side {
+        width: 100%;
+        height: 300px;
+    }
+
+    .right_side {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .hotel_sections {
+        margin: 80px auto 50px auto;
+    }
+
+    .hotel_op_boxes {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .hotel_op_box {
+        width: 100%;
+        height: 350px;
+        margin-bottom: 30px;
+    }
+
+    .hotel_video_box {
+        height: 300px;
+    }
+    
+    .main_title {
+        font-size: 30px;
+    }
+
+    .play_btn {
+        width: 57px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 376px) {
+    .hotel_sections, .testimonials_section {
+        width: 350px;
+    }
+}
+
+@media (max-width: 321px) {
+    .hotel_sections, .testimonials_section {
+        width: 290px;
+    }
+
+    .hotel_op_box {
+        height: 270px;
+    }
+
+    .left_side {
+        width: 100%;
+        height: 240px;
+    }
+
+    .hotel_video_box {
+        height: 250px;
+    }
+
+    .hotel_video_box .title_box {
+        font-size: 12px;
+    }
+
+    .main_title {
+        font-size: 25px;
+    }
+
+    .play_btn {
+        width: 52px;
+        height: 55px;
+        font-size: 16px;
+    }
 }
