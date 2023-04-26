@@ -143,41 +143,6 @@
     color: #101010;
 }
 
-.pagination {
-    display: flex;
-}
-
-.page_btn {
-    margin-right: 5px;
-    background-color: #e8f1f8;
-    padding: 10px;
-    width: 20px;
-    height: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: .5s;
-}
-.page_btn:hover {
-    background-color: #1cc3b2;
-    color: #fff;
-}
-.page_btn.show {
-    background-color: #1cc3b2;
-    color: #fff;
-}
-
-.next_btn {
-    width: 60px;
-    font-size: 14px;
-}
-.next_btn i {
-    margin-left: 5px;
-    font-size: 12px;
-}
-
 @media (max-width: 1025px) {
     .rooms_section {
         width: 950px;

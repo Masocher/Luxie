@@ -30,7 +30,7 @@
                     <a href="./home.html"><li class="header_sec">Home</li></a>
                     <a href="./rooms.html"><li class="header_sec">Rooms</li></a>
                     <a href="./about-us.html"><li class="header_sec">About Us</li></a>
-                    <a href="#"><li class="header_sec">News</li></a>
+                    <a href="./our-blog.html"><li class="header_sec">Our Blog</li></a>
                     <a href="#"><li class="header_sec">Contact Us</li></a>
                 </ul>
 
@@ -283,12 +283,6 @@
                 a_e_boxes[e_id].classList.remove("show")
             }
 
-            let loading_box = document.querySelector(".loading_box")
-            loading_box.classList.add("show")
-            setTimeout(() => {
-                loading_box.classList.remove("show")
-            }, 5000);
-
             let pages = document.querySelectorAll(".page_btn")
 
             pages[0].classList.add("show")
@@ -300,6 +294,12 @@
                 pages[3].classList.remove("show")
                 pages[s_id].classList.add("show")
             }
+
+            let loading_box = document.querySelector(".loading_box")
+            loading_box.classList.add("show")
+            setTimeout(() => {
+                loading_box.classList.remove("show")
+            }, 5000);
         </script>
     </body>
 </html>
