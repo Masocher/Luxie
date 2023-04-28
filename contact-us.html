@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About Us</title>
+        <title>Contact us</title>
         <link rel="stylesheet" href="all.css">
-        <link rel="stylesheet" href="about-us.css">
+        <link rel="stylesheet" href="contact-us.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.css" integrity="sha512-IISyc/Jrl/fD0vfG2rWRsnaKcBjDrzU6CjH9dtt/IC9KjpC9jvJnGF62W0mMpBOAgwDvIP94SUKIuSimGZ6wrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
@@ -44,74 +44,71 @@
                     <div class="top_side_image_box"></div>
 
                     <div class="top_side_title">
-                        <div class="title_box">About Us</div>
+                        <div class="title_box">Contact Us</div>
 
-                        <div class="page_address"><a href="./home.html">Home</a> <i class="fa-solid fa-angle-right"></i> About Us</div>
+                        <div class="page_address"><a href="./home.html">Home</a> <i class="fa-solid fa-angle-right"></i> Contact Us</div>
                     </div>
                 </div>
 
-                <div class="testimonials_section">
-                    <div class="left_side">
-                        <div class="about_image_box"></div>
-                    </div>
+                <div class="contact_information">
+                    <div class="contact_inf_box">
+                        <i class="fa-solid fa-phone"></i>
 
-                    <div class="right_side">
-                        <div class="about_title_box">
-                            <div class="title_issue">TESTIMONIALS</div>
-                            <div class="about_title">20 Years Of Experience</div>
-                        </div>
-
-                        <div class="about_description">It is important to take care of the patient, to be followed by the doctor, but it is a time of great pain and suffering. That there may be some pure mourning for the poison. Ridiculous mouse mauris vitae ultricies leo intact.</div>
-                        <div class="about_description">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</div>
-                    </div>
-                </div>
-
-                <div class="hotel_video_box">
-                    <div class="image_box"></div>
-
-                    <div class="bottom_content">
                         <div class="title_box">
-                            <div>ULTIMATE SOLUTIONS</div>
-    
-                            <div class="main_title">Our Hotel & Rooms</div>
+                            <div>Phone</div>
+
+                            <span>+01-234-567-890</span>
                         </div>
-    
-                        <div class="play_btn"><i class="fa-solid fa-play"></i></div>
+                    </div>
+
+                    <div class="contact_inf_box">
+                        <i class="fa-sharp fa-solid fa-location-dot"></i>
+
+                        <div class="title_box">
+                            <div>Address</div>
+
+                            <span>Iris Watson, 283 Fusce Rd,NY</span>
+                        </div>
+                    </div>
+
+                    <div class="contact_inf_box">
+                        <i class="fa-solid fa-clock"></i>
+
+                        <div class="title_box">
+                            <div>Open time</div>
+
+                            <span>10:00 am to 23:00 pm</span>
+                        </div>
+                    </div>
+
+                    <div class="contact_inf_box">
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <div class="title_box">
+                            <div>Email</div>
+
+                            <span>Info.luxie @gmail.com</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="hotel_sections">
+                <div class="message_box">
                     <div class="title_box">
-                        <div class="title_issue">ULTIMATE SOLUTIONS</div>
+                        <div class="title_issue">CONTACT US</div>
 
-                        <div class="main_title">Our Hotel & Rooms</div>
+                        <div class="main_title">Leave Message</div>
                     </div>
 
-                    <div class="hotel_op_boxes">
-                        <div class="hotel_op_box">
-                            <div class="image_box i_b_1"></div>
-    
-                            <div class="link_box" onmouseenter="addShowClass(0)" onmouseleave="removeShowClass(0)">
-                                <div class="link_box_link">Biking & Sports</div>
-                            </div>
+                    <div class="input_box">
+                        <div class="inputs">
+                            <input class="message_input" type="text" placeholder="Your Name">
+                            <input class="message_input" type="text" placeholder="Your Email">
                         </div>
 
-                        <div class="hotel_op_box">
-                            <div class="image_box i_b_2"></div>
-
-                            <div class="link_box" onmouseenter="addShowClass(1)" onmouseleave="removeShowClass(1)">
-                                <div class="link_box_link">Retaurant & Bar</div>
-                            </div>
-                        </div>
-
-                        <div class="hotel_op_box">
-                            <div class="image_box i_b_3"></div>
-                            
-                            <div class="link_box" onmouseenter="addShowClass(2)" onmouseleave="removeShowClass(2)">
-                                <div class="link_box_link">Pool & Party</div>
-                            </div>
-                        </div>
+                        <textarea placeholder="Your Message"></textarea>
                     </div>
+
+                    <div class="send_message_btn">Send Message</div>
                 </div>
             </div>
 
@@ -185,16 +182,6 @@
         </div>
 
         <script>
-            let link_boxes = document.querySelectorAll(".link_box_link")
-
-            const addShowClass = (id) => {
-                link_boxes[id].classList.add("show")
-            }
-
-            const removeShowClass = (id) => {
-                link_boxes[id].classList.remove("show")
-            }
-
             let loading_box = document.querySelector(".loading_box")
             loading_box.classList.add("show")
             setTimeout(() => {

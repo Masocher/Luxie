@@ -1,0 +1,105 @@
+.contact_information{
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin: 100px auto;
+}
+
+.contact_inf_box {
+    width: fit-content;
+    color: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact_inf_box i {
+    font-size: 30px;
+    color: #1cc3b2;
+    margin-bottom: 10px;
+}
+
+.contact_inf_box .title_box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.contact_inf_box .title_box div {
+    margin: 10px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.message_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 1px;
+    margin-bottom: 100px;
+}
+
+.message_box .title_box {
+    text-align: center;
+}
+
+.main_title {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.title_issue {
+    color: #1cc3b2;
+    font-weight: bold;
+}
+
+.input_box {
+    width: 1100px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto 0 auto;
+}
+
+.inputs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.message_input, textarea {
+    background: none;
+    border: 1px solid #ebebeb;
+    padding: 20px;
+    outline: 0;
+    transition: .2s;
+    width: calc(48.5% - 40px);
+    letter-spacing: 1px;
+}
+.message_input:focus, textarea:focus {
+    border-color: #1cc3b2;
+}
+
+textarea {
+    width: calc(100% - 40px);
+    height: 200px;
+    resize: vertical;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.send_message_btn {
+    color: #fff;
+    background-color: #1cc3b2;
+    padding: 15px 40px;
+    border-radius: 3px;
+    margin-top: 30px;
+    transition: .5s;
+    cursor: pointer;
+}
+.send_message_btn:hover {
+    background-color: #101010;
+}
