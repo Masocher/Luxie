@@ -1,0 +1,123 @@
+.entertainments {
+    width: 100%;
+    height: 750px;
+    margin: 50px 0;
+    display: flex;
+}
+
+.entertainment_box, .entertainment_box_2, .entertainment_box_4 {
+    width: 25%;
+    height: 100%;
+    position: relative;
+}
+
+.e_i_b_1, .e_i_b_2, .e_i_b_3, .e_i_b_4 {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.e_i_b_1 {
+    background-image: url(./../public/images/entertainments/1.jpg);
+}
+.e_i_b_2 {
+    background-image: url(./../public/images/entertainments/2.jpg);
+}
+.e_i_b_3 {
+    background-image: url(./../public/images/entertainments/3.jpg);
+}
+.e_i_b_4 {
+    background-image: url(./../public/images/entertainments/4.jpg);
+}
+
+.entertainment_title_box {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0 40px;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 22px;
+    transition: .4s ease-out;
+}
+
+.e_t_b {
+    margin-top: 40px;
+}
+
+.entertainment_issue {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.about_entertainment {
+    transition: .2s ease-in-out;
+    font-size: 14px;
+}
+
+.about_e_b {
+    margin-top: 10px;
+    line-height: 20px;
+    transition: 2s;
+}
+
+.e_b_discover_btn {
+    background-color: #0e2737;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 30px;
+    cursor: pointer;
+}
+
+/* Responsive */
+
+@media (max-width: 1025px) {
+    .entertainment_title_box.show {
+        height: 360px;
+    }
+}
+
+@media (max-width: 769px) {
+    .entertainment_title_box {
+        height: 380px;
+    }
+
+    .entertainment_box_4 {
+        display: none;
+    }
+
+    .entertainment_box, .entertainment_box_2 {
+        width: calc(100% / 3);
+        height: 100%;
+        position: relative;
+    }
+}
+
+@media (max-width: 501px) {
+    .entertainments {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .entertainment_box_2 {
+        display: none;
+    }
+
+    .entertainment_box {
+        width: 100%;
+    }
+
+    .entertainment_title_box.show {
+        height: 300px;
+        background-color: #1cc3b2;
+    }
+}

@@ -1,0 +1,40 @@
+.pagination {
+    display: flex;
+    width: 100%;
+}
+
+.page_btn, .next_btn {
+    margin-right: 5px;
+    background-color: #e8f1f8;
+    padding: 10px 20px;
+    width: 35px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+.page_btn:hover, .next_btn:hover {
+    background-color: #1cc3b2;
+    color: #fff;
+}
+
+.next_btn {
+    width: 60px;
+    font-size: 14px;
+    padding: 10px 40px;
+}
+.next_btn div {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+/* Responsive */
+
+@media (max-width: 426px) {
+    .pagination {
+        justify-content: center;
+    }
+}

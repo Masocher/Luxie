@@ -1,0 +1,124 @@
+.services {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    margin: 100px auto 0 auto;
+}
+
+.service_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 2px 14px 5px rgba(20, 20, 20, 0.05);
+    color: #101010;
+    border-radius: 3px;
+    width: 190px;
+    padding: 35px 0;
+    cursor: pointer;
+    transition: .5s;
+}
+.service_box:hover {
+    color: #1cc3b2;
+}
+
+.service_icon {
+    font-size: 35px;
+    color: #1cc3b2;
+}
+
+.service_title {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+/* Responsive */
+
+@media (max-width: 1025px) {
+    .services {
+        width: 950px;
+    }
+
+    .service_box {
+        box-shadow: 0 2px 14px 5px rgba(20, 20, 20, 0.04);
+        width: 160px;
+        padding: 30px 0;
+    }
+    
+    .service_icon {
+        font-size: 30px;
+    }
+    
+    .service_title {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 769px) {
+    .services {
+        width: 720px;
+    }
+
+    .service_box {
+        box-shadow: 0 2px 14px 5px rgba(20, 20, 20, 0.04);
+        width: 130px;
+        padding: 25px 0;
+    }
+    
+    .service_icon {
+        font-size: 25px;
+    }
+    
+    .service_title {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 501px) {
+    .services {
+        width: 390px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .service_box {
+        margin: 0 auto 20px auto;
+        width: 175px;
+        padding: 35px 0;
+    }
+    
+    .service_icon {
+        font-size: 30px;
+    }
+    
+    .service_title {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 376px) {
+    .services {
+        width: 350px;
+    }
+
+    .service_box {
+        width: 155px;
+    }
+}
+
+@media (max-width: 321px) {
+    .services {
+        width: 290px;
+    }
+
+    .service_box {
+        width: 125px;
+        height: 55px;
+    }
+    
+    .service_icon {
+        font-size: 25px;
+    }
+}

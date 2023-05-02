@@ -1,0 +1,172 @@
+.slider {
+    width: 100%;
+    height: 700px;
+    margin-top: 100px;
+}
+
+.slide {
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.s_i_b_1, .s_i_b_2, .s_i_b_3, .s_i_b_4 {
+    height: 100%;
+    width: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.s_i_b_1 {
+    background-image: url(./../public/images/rooms/1.jpg);
+}
+.s_i_b_2 {
+    background-image: url(./../public/images/rooms/2.jpg);
+}
+.s_i_b_3 {
+    background-image: url(./../public/images/rooms/3.jpg);
+}
+.s_i_b_4 {
+    background-image: url(./../public/images/rooms/4.jpg);
+}
+
+.slide_information_box {
+    background-color: #0e2737;
+    width: 50%;
+    padding: 0 80px;
+    height: 100%;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.slide_inf_title {
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+.price_box {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    width: fit-content;
+    width: 200px;
+    letter-spacing: 1px;
+    color: #1cc3b2;
+}
+
+.price_box div {
+    margin-left: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.slide_service {
+    display: flex;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.slide_service div {
+    margin-left: 10px;
+}
+
+.slide_service_text {
+    width: 130px;
+}
+
+.view_details {
+    background-color: #1cc3b2;
+    color: #fff;
+    border-radius: 3px;
+    padding: 15px 40px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .5s;
+    margin-top: 30px;
+    letter-spacing: 1px;
+}
+.view_details:hover {
+    background-color: #fff;
+    color: #1cc3b2;
+}
+
+/* Responsive */
+@media (max-width: 769px) {
+    .slider {
+        height: 500px;
+        margin-top: 50px;
+    }
+
+    .slide_information_box {
+        width: 50%;
+        padding: 0 40px;
+    }
+    
+    .slide_inf_title {
+        font-size: 40px;
+    }
+
+    .slide_service {
+        font-size: 12px;
+    }
+    
+    .slide_service div {
+        margin-left: 10px;
+    }
+    
+    .slide_service_text {
+        width: 70px;
+    }
+}
+
+@media (max-width: 501px) {
+    .slider {
+        height: 670px;
+        margin-top: 50px;
+    }
+
+    .slide {
+        flex-direction: column;
+    }
+
+    .s_i_b_1, .s_i_b_2, .s_i_b_3, .s_i_b_4 {
+        height: 40%;
+        width: 100%;
+    }
+
+    .slide_information_box {
+        width: 100%;
+        height: 60%;
+    }
+
+    .slide_inf_title {
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .price_box {
+        margin: 20px 0 30px 0;
+        font-size: 30px;
+    }
+
+    .price_box div {
+        font-size: 14px;
+    }
+
+    .view_details {
+        padding: 12px 30px;
+        font-size: 12px;
+        margin-top: 20px;
+    }
+}
