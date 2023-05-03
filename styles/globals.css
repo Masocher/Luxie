@@ -10,9 +10,14 @@ body {
   overflow-x: hidden;
 }
 
+@font-face {
+  font-family: 'Poppins';
+  src: url(./../public/font/Poppins-Medium.ttf);
+}
+
 body {
   background-color: #fff;
-  font-family: sans-serif;
+  font-family: 'Poppins';
   color: #101010;
 }
 
