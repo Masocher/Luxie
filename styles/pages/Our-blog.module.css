@@ -212,19 +212,19 @@
     height: 100%;
 }
 .b_n_i_1 {
-    background-image: url(./../../public/images/news/1.jpg);
+    background-image: url(./../../public/images/news/3.jpg);
 }
 .b_n_i_2 {
-    background-image: url(./../../public/images/news/2.jpg);
+    background-image: url(./../../public/images/news/5.jpg);
 }
 .b_n_i_3 {
-    background-image: url(./../../public/images/news/3.jpg);
+    background-image: url(./../../public/images/news/2.jpg);
 }
 .b_n_i_4 {
     background-image: url(./../../public/images/news/4.jpg);
 }
 .b_n_i_5 {
-    background-image: url(./../../public/images/news/5.jpg);
+    background-image: url(./../../public/images/news/1.jpg);
 }
 
 .big_new_box .information_box {

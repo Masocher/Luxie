@@ -12,7 +12,27 @@
     right: 30px;
     cursor: pointer;
     transition: .2s;
+    z-index: 9;
 }
 .scroll_btn:hover {
     background-color: #101010;
+}
+
+/* Responsive */
+
+@media (max-width: 501px) {
+    .scroll_btn {
+        width: 30px;
+        height: 30px;
+        bottom: 8px;
+        right: 8px;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 426px) {
+    .scroll_btn {
+        display: none;
+    }
 }
