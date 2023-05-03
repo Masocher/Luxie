@@ -1,0 +1,18 @@
+.scroll_btn {
+    background-color: #1cc3b2;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+.scroll_btn:hover {
+    background-color: #101010;
+}

@@ -12,6 +12,7 @@ import Pagination from '../components/pagination'
 import ContactUsBox from '../components/contact-us-box'
 import Footer from '../components/footer'
 import Loading from '../components/loading'
+import Scrolling from '../components/scrolling'
 
 // tools
 import { useState } from 'react'
@@ -26,6 +27,8 @@ const OurBlog = () => {
     return (
         <div className={styles.main_container}>
             <Loading status={loadingStatus} />
+
+            <Scrolling />
 
             <Header />
 

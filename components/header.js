@@ -1,5 +1,6 @@
 // tools
 import Link from "next/link"
+import { useState } from "react"
 
 // assets
 import styles from './../styles/Header.module.css'
@@ -8,9 +9,21 @@ import styles from './../styles/Header.module.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars, faArrowRight } from "@fortawesome/free-solid-svg-icons"
 
+// components
+import Menu from "./menu"
+
+// redux
+import { useDispatch } from "react-redux"
+import { openMenu } from "./redux/actions"
+
 const Header = () => {
+
+    const dispatch = useDispatch()
+
     return (
         <div className={styles.header}>
+            <Menu />
+
             <div className={styles.logo_box}>
                 <div className={styles.logo}>Luxie</div>
             </div>
@@ -25,7 +38,7 @@ const Header = () => {
 
             <div className={styles.booking}>Book Now <div><FontAwesomeIcon icon={faArrowRight} /></div></div>
 
-            <div className={styles.menu_btn}><FontAwesomeIcon icon={faBars} /></div>
+            <div className={styles.menu_btn} onClick={() => dispatch(openMenu())}><FontAwesomeIcon icon={faBars} /></div>
         </div>
     )
 }

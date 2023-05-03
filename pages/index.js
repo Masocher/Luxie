@@ -12,6 +12,7 @@ import Events from '../components/events'
 import ContactUsBox from '../components/contact-us-box'
 import Footer from '../components/footer'
 import Loading from '../components/loading'
+import Scrolling from '../components/scrolling'
 
 // tools
 import { useState } from 'react'
@@ -26,6 +27,8 @@ export default function Home() {
   return (
     <div className={styles.main_container}>
       <Loading status={loadingStatus} />
+
+      <Scrolling />
 
       <Header />
 
