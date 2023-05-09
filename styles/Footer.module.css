@@ -170,7 +170,6 @@
 }
 .social_medias div:hover {
     color: #1cc3b2;
-    background-color: #fff;
 }
 
 /* Responsive */
@@ -230,6 +229,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .social_medias div:hover {
+        color: #1cc3b2;
+         background-color: #fff;
     }
 
     .f_c_1, .f_c_2, .f_c_3, .f_c_4{

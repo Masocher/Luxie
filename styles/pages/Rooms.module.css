@@ -143,6 +143,10 @@
     color: #101010;
 }
 
+.view_details div {
+    margin: 2px 0 0 7px;
+}
+
 @media (max-width: 1025px) {
     .rooms_section {
         width: 950px;
